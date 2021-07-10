@@ -16,21 +16,22 @@ end
 # ╔═╡ aa0e0390-22cc-11eb-250e-d3273059cf0d
 begin
 	using Pkg
-	Pkg.activate(".")
+	Pkg.add(["Colors", "LaTeXStrings", "Plots", "PlutoUI", "RowEchelon", "StatsBase"])
 	using Colors
 	using LaTeXStrings
 	using LinearAlgebra
 	using Plots
 	using PlutoUI
-	using PyPlot
 	using RowEchelon
 	using StatsBase
-	pyplot()
-end
+	gr()
+end;
 
 # ╔═╡ bdbd61b0-22cc-11eb-03ab-1533954707a1
 md"""
 # Linear algebra in a nutshell
+
+*Matt Helm*
 
 #### Part I. Vectors & Scalars
 

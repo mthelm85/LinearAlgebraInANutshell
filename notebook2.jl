@@ -16,21 +16,22 @@ end
 # ╔═╡ 93d1e3b0-29a9-11eb-0033-b9b6a0dbc950
 begin
 	using Pkg
-	Pkg.activate(".")
+	Pkg.add(["Colors","LaTeXStrings","Plots","PlutoUI","RowEchelon","StatsBase"])
 	using Colors
 	using LaTeXStrings
 	using LinearAlgebra
 	using Plots
 	using PlutoUI
-	using PyPlot
 	using RowEchelon
 	using StatsBase
-	pyplot()
+	gr()
 end;
 
 # ╔═╡ abe4ea12-29a9-11eb-0767-6fb6acc4f885
 md"""
 # Linear algebra in a nutshell
+
+*Matt Helm*
 
 #### Part II. Matrices
 
